@@ -1,18 +1,31 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import ScatCard from '../../shared/ScatCard/ScatCard';
 
 import './Home.scss';
+import scatsData from '../../../helpers/data/scatsData';
+import authData from '../../../helpers/data/authData';
 
 class Home extends React.Component {
   state = {
-    scats: []
+    scats: [],
+  }
+
+  getScats = () => {
+    const uid = authData.getUid();
+    scatsData.getScatsByUid(uid)
+      .then((scats) => this.setState({ scats }))
+      .catch((err) => console.error('unable to load scat', err));
+  }
+
+  componentDidMount() {
+    this.getScats();
   }
 
   render() {
     const { scats } = this.state;
     const buildScatCards = scats.map((scat) => (
-      <ScatCard scat={scat}/>
+      <ScatCard key={scat.id} scat={scat}/>
     ));
 
     return (

@@ -65,7 +65,6 @@ class App extends React.Component {
           <React.Fragment>
             <MyNavbar authed={authed}/>
             <div className="container">
-              <div className="row">
                 <Switch>
                   <PrivateRoute path='/home' component={Home} authed={authed} />
                   <PrivateRoute path='/new' component={NewScat} authed={authed} />
@@ -75,7 +74,6 @@ class App extends React.Component {
                   <Redirect from="*" to="/home"/>
                 </Switch>
               </div>
-            </div>
           </React.Fragment>
         </BrowserRouter>
       </div>

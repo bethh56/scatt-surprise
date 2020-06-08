@@ -108,7 +108,7 @@
       "wasFulfilling": false,
       "location": "North Pole",
       "notes": "Had corn",
-      "uid": "JuFkoAbbDPeJuNgtb4ya1a9ueg43"
+      "uid": "cj82FakfTpOgI9fXaVfQZUC7Zqf2"
     },
     "scat11": {
       "color": "brown",
@@ -121,7 +121,7 @@
       "notes": "smelly",
       "uid": "p00pin"
     },
-    "scatt12": {
+    "scat12": {
       "color": "brown",
       "shape": "spiral",
       "size": "medium",
@@ -141,11 +141,11 @@
       "wasFulfilling": true,
       "location": "Home",
       "notes": "really hurt",
-      "uid": "JuFkoAbbDPeJuNgtb4ya1a9ueg43"
+      "uid": "cj82FakfTpOgI9fXaVfQZUC7Zqf2"
     },
     "scat14": {
       "color": "orange",
-      "shape": "mom's spaghetti",
+      "shape": "moms spaghetti",
       "size": "large",
       "temperature": 32,
       "viscosity": "thick",
@@ -167,14 +167,14 @@
     },
     "scat16": {
       "color": "yellow-y brown",
-      "shape:": "swirly mountain",
+      "shape": "swirly mountain",
       "size": "medium-ish",
       "temperature": 99,
       "viscosity": "soft serve",
       "wasFulfilling": true,
       "location": "driveway",
       "notes": "no more spicy Thai food for you...",
-      "uid": "JuFkoAbbDPeJuNgtb4ya1a9ueg43"
+      "uid": "cj82FakfTpOgI9fXaVfQZUC7Zqf2"
     },
     "scat17": {
       "color": "black",
@@ -207,7 +207,7 @@
       "wasFulfilling": true,
       "location": "Costco",
       "notes": "my dog found it",
-      "uid": "JuFkoAbbDPeJuNgtb4ya1a9ueg43"
+      "uid": "cj82FakfTpOgI9fXaVfQZUC7Zqf2"
     }
   }
 } 
