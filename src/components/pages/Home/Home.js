@@ -22,10 +22,16 @@ class Home extends React.Component {
     this.getScats();
   }
 
+  removeScat = (scatId) => {
+    scatsData.deleteScat(scatId)
+      .then(() => this.getScats())
+      .catch((err) => console.error('unable to delete', err));
+  }
+
   render() {
     const { scats } = this.state;
     const buildScatCards = scats.map((scat) => (
-      <ScatCard key={scat.id} scat={scat}/>
+      <ScatCard key={scat.id} scat={scat} removeScat={this.removeScat}/>
     ));
 
     return (
